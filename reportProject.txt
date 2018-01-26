@@ -1,0 +1,17 @@
+%%%%%%%%%%%%% Naive Bayes method (Generative model)
+In this model, I fit multinomial naive Bayes to the 9/10th of text data using fitcnb:     
+modelNB = fitcnb(XTextlabel(cvInd~=foldI,:), trainLabel, 'Distribution','mn');       
+Then I got the prediction by applying the model to the rest 1/10th of the data and compute the accuracy.
+I do that 10 times and average the accuracy to get the cross-validation accuracy.
+
+Run the script naiveBayes.m
+The cross-validation accuracy is around 80.4%
+
+%%%%%%%%%%%%% SVM method (discriminative model)
+In this model, I fit SVM model to the 9/10th of text data using liblinar model train:
+modelSVM = train(trainLabel, sparse(XTextlabel(cvInd~=foldI,:)), '-c 1 -s 0');
+Then I got the prediction by applying the model to the rest 1/10th of the data and compute the accuracy.
+I do that 10 times and average the accuracy to get the cross-validation accuracy.
+
+Run the script svmModel.m
+The cross-validation accuracy is around 81.1%
