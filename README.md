@@ -1,4 +1,4 @@
-# TwitterEmotion
+# NLP-twitter-sentiment-analysis
 Contains the code to classify user's emotion from Twitter post.
 
 The problem description is in ProblemDescription.txt.
