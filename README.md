@@ -3,7 +3,7 @@ Contains the code to classify user's emotion from Twitter post.
 
 The problem description is in ProblemDescription.txt.
 
-Example to run code is in reportProject.txt
+Example to run code is in run_model.txt
 
 A short report can be found in *Report.pdf*
 
